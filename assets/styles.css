@@ -1,0 +1,73 @@
+---
+---
+{% capture css %}
+{% include assets/css/vendor/normalize-3.0.0.min.css %}
+
+{% include assets/css/shared/scaffolding.css %}
+{% include assets/css/shared/utilities.css %}
+{% include assets/css/shared/forms.css %}
+{% include assets/css/shared/markdown.css %}
+{% include assets/css/shared/highlight.css %}
+
+{% include assets/css/components/dropdown.css %}
+{% include assets/css/components/float-view.css %}
+{% include assets/css/components/navigation.css %}
+{% include assets/css/components/search.css %}
+
+.page-wrapper {
+  position: relative;
+  min-height: 100%;
+  margin-left: 17.5rem;
+}
+
+.toc-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 15;
+  width: 17.5rem;
+  font-size: 0.9rem;
+  border-right: #ddd solid 1px;
+}
+
+.toc-wrapper h3 {
+  padding: 0 1rem;
+  margin-bottom: .35rem;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+}
+
+.content h2 {
+  clear: both;
+  padding: 2rem 2rem 0;
+  margin-top: 2.5rem !important;
+  border-top: #ddd solid 1px;
+}
+
+.content h2:first-child {
+  margin-top: -2.5rem !important;
+  border-top: 0;
+}
+
+.content blockquote,
+.content .highlight {
+  padding: 1.5rem 2rem;
+  margin: 0;
+  text-shadow: 0 1px #fff;
+  background-color: #f5f5f5;
+  border-left: #ddd solid 1px;
+}
+
+.content blockquote > p {
+  padding: .85rem 1.4rem;
+  background-color: #fff;
+  border: #ddd solid 1px;
+  border-radius: 2px;
+}
+{% endcapture %}{{ css | strip_newlines | replace:'    ','' | replace:'  ',' ' }}

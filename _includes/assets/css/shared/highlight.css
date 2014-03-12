@@ -1,0 +1,174 @@
+/**
+ * # Highlight
+ *
+ * No styleguide reference.
+ */
+
+.highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+
+.highlight .cp {
+  color: #999;
+  font-weight: bold;
+}
+
+.highlight .c,
+.highlight .cm,
+.highlight .c1 {
+  color: #999988;
+  font-style: italic;
+}
+
+.highlight .cs {
+  color: #999;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.highlight .gd {
+  color: #000;
+  background-color: #ffdddd;
+}
+
+.highlight .gd .x {
+  color: #000;
+  background-color: #ffaaaa;
+}
+
+.highlight .ge {
+  font-style: italic;
+}
+
+.highlight .gr {
+  color: #aa0000;
+}
+
+.highlight .gh,
+.highlight .bp {
+  color: #999;
+}
+
+.highlight .gi {
+  color: #000;
+  background-color: #ddffdd;
+}
+
+.highlight .gi .x {
+  color: #000;
+  background-color: #aaffaa;
+}
+
+.highlight .go {
+  color: #888;
+}
+
+.highlight .gp,
+.highlight .nn {
+  color: #555;
+}
+
+.highlight .gu {
+  color: #800080;
+  font-weight: bold;
+}
+
+.highlight .gt {
+  color: #aa0000;
+}
+
+.highlight .k,
+.highlight .o,
+.highlight .gs,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr {
+  font-weight: bold;
+}
+
+.highlight .kt {
+  color: #445588;
+  font-weight: bold;
+}
+
+.highlight .n {
+  color: #333;
+}
+
+.highlight .nb {
+  color: #0086b3;
+}
+
+.highlight .nc {
+  color: #445588;
+  font-weight: bold;
+}
+
+.highlight .ni {
+  color: purple;
+}
+
+.highlight .ne,
+.highlight .nf {
+  color: #990000;
+  font-weight: bold;
+}
+
+.highlight .nt {
+  color: navy;
+}
+
+.highlight .na,
+.highlight .no,
+.highlight .nv,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi {
+  color: teal;
+}
+
+.highlight .ow {
+  font-weight: bold
+}
+
+.highlight .w {
+  color: #bbb
+}
+
+.highlight .m,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo,
+.highlight .il {
+  color: #009999;
+}
+
+.highlight .s,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .s1 {
+  color: #dd1144;
+}
+
+.highlight .sr {
+  color: #009926;
+}
+
+.highlight .ss {
+  color: #990073;
+}
+
+.highlight .gc {
+  color: #999;
+  background-color: #eaf2f5;
+}

@@ -1,0 +1,58 @@
+/**
+ * # Search
+ *
+ * A simple search widget that extends the dropdown and form control components.
+ * Used alongside picnic.search.js which adds the actual search functionality
+ * using lunr.js.
+ *
+ * Markup:
+  <div class="search">
+    <input class="form-control js-search-input" type="text" placeholder="Search">
+    <ul class="dropdown search-results js-search-results">
+      <li>
+        <a href="#">Search Result <span class="categories">Foo / Bar</span></a>
+      </li>
+    </ul>
+  </div>
+ *
+ * No styleguide reference.
+ */
+
+.search {
+  position: relative;
+  z-index: 20;
+  margin: 1rem;
+}
+
+/* Completely hide the search widget when Javascript is either unavailable or
+ * or unsupported (.no-js and .js are added and removed, respectively, using
+ * querySelector() and classList) */
+.no-js .search {
+  display: none;
+}
+
+.search-results .categories {
+  display: block;
+  font-size: 90%;
+  font-weight: bold;
+}
+
+/**
+ * ## Empty Results
+ *
+ * When no results are found, you can add a list item with the class of
+ * `.no-results` which will adjust its size to that of a dropdown link.
+ *
+ * Markup:
+  <ul class="dropdown search-results js-search-results">
+    <li><i>No results for <b>[search query]</b></i></li>
+  </ul>
+ *
+ * No styleguide reference.
+ */
+
+.search-results .no-results {
+  display: block;
+  padding: 10px;
+  text-align: center;
+}

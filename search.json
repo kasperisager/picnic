@@ -1,0 +1,7 @@
+---
+---
+{
+  "pages": [
+  {% for page in site.pages %}{% unless page.url contains "/search.json" %}{% unless page.url contains "/assets/" %}{% include search.json entry = page %},{% endunless %}{% endunless %}{% endfor %}
+  ]
+}

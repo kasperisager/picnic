@@ -1,0 +1,18 @@
+<div class="search">
+  <input class="form-control js-search-input" type="text" placeholder="Search">
+  <ul class="dropdown search-results js-search-results"></ul>
+</div>
+
+{% raw %}
+<!-- Template for rendering search results -->
+<script id="template-search" type="text/mustache" data-no-instant>
+  {{#results}}
+    <li><a href="{{ url }}">{{ title }} <span class="categories">{{ categories }}</span></a></li>
+  {{/results}}
+  {{^results}}
+    {{#query}}
+      <li class="no-results"><i>No results for <b>{{ query }}</b></i></li>
+    {{/query}}
+  {{/results}}
+</script>
+{% endraw %}

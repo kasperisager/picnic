@@ -1,0 +1,199 @@
+/**
+ * # Markdown
+ *
+ * Formatting of rendered Markdown.
+ *
+ * No styleguide reference.
+ */
+
+.markdown-body {
+  overflow: hidden;
+  line-height: 1.7;
+  word-wrap: break-word;
+}
+
+.markdown-body > *:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin: 1rem 0;
+}
+
+/**
+ * ## Headings
+ *
+ * Markup:
+  <h1>Heading Level 1</h1>
+  <h2>Heading Level 2</h2>
+  <h3>Heading Level 3</h3>
+  <h4>Heading Level 4</h4>
+  <h5>Heading Level 5</h5>
+  <h6>Heading Level 6</h6>
+ *
+ * No styleguide reference.
+ */
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin: 1em 0 1rem;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+/**
+ * ## Lists
+ *
+ * No styleguide reference.
+ */
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2rem;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/**
+ * ## Code
+ *
+ * No styleguide reference.
+ */
+
+.markdown-body code {
+  padding: .2rem;
+  font-size: 85%;
+  font-family: Menlo, Consolas, monospace;
+  white-space: nowrap;
+  background-color: rgba(0,0,0,.05);
+  border-radius: .2rem;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre > code {
+  padding: 0;
+  margin: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+/**
+ * ## Blockquotes
+ *
+ * No styleguide reference.
+ */
+
+.markdown-body blockquote > :first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+/**
+ * ## Tables
+ *
+ * No styleguide reference.
+ */
+
+.markdown-body table {
+  width: 100%;
+  overflow: auto;
+}
+
+.markdown-body table td {
+  padding: .75rem;
+}
+
+.markdown-body table th {
+  padding: .35rem .75rem;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  text-align: left;
+  vertical-align: top;
+}
+
+.markdown-body table th:first-child,
+.markdown-body table td:first-child {
+  padding-left: 0;
+}
+
+.markdown-body table th:last-child,
+.markdown-body table td:last-child {
+  padding-right: 0;
+}
+
+.markdown-body table tr:last-child td {
+  border-bottom: 1px solid #eee;
+}
+
+/**
+ * ## Images
+ *
+ * No styleguide reference.
+ */
+
+.markdown-body img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/**
+ * ## Anchored Headings
+ *
+ * Markup:
+  <h2 id="unique-link"><a class="anchor" href="#unique-link">#</a>Heading</h2>
+ *
+ * No styleguide reference.
+ */
+
+.markdown-body h1 .anchor,
+.markdown-body h2 .anchor,
+.markdown-body h3 .anchor,
+.markdown-body h4 .anchor,
+.markdown-body h5 .anchor,
+.markdown-body h6 .anchor {
+  display: inline-block;
+  opacity: 0;
+  width: 2rem;
+  text-align: center;
+  margin-left: -2rem;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  opacity: 1;
+}

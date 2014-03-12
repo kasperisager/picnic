@@ -1,0 +1,79 @@
+/**
+ * # Float View
+ *
+ * Extends the Markdown formatting component with a 2-column layout, where the
+ * left column is used for text and the right column for code and commenting.
+ *
+ * Markup:
+  <div class="float-view"></div>
+ *
+ * No styleguide reference.
+ */
+
+.float-view {
+  padding: 2rem 0;
+}
+
+.float-view > h1,
+.float-view > h2,
+.float-view > h3,
+.float-view > h4,
+.float-view > h5,
+.float-view > h6,
+.float-view > p,
+.float-view > table,
+.float-view > ul,
+.float-view > ol,
+.float-view > dl,
+.float-view > aside {
+  width: 50%;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.float-view > table {
+  /* Allow padding to be added */
+  border-collapse: separate;
+}
+
+.float-view blockquote,
+.float-view .highlight {
+  float: right;
+  clear: right;
+  width: 50%;
+  padding: 1.5rem 2rem;
+}
+
+.float-view blockquote > p,
+.float-view .highlight > pre {
+  margin: 0;
+}
+
+/**
+ * ## Code Canvas
+ *
+ * A "code canvas" is a light-grey, right-hand column within the float view.
+ * This is were all the code and code comments you write will show up.
+ *
+ * __NB:__ Make sure to wrap the float view and the code canvas in a non-
+ * statically positioned element! The inline styling in the example below is
+ * not to be used.
+ *
+ * Markup:
+  <div style="position: relative">
+    <div class="float-view"></div>
+    <div class="code-canvas"></div>
+  </div>
+ *
+ * No styleguide
+ */
+
+.code-canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: #fafafa;
+  border-left: #ddd solid 1px;
+}

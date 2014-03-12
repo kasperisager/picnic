@@ -1,0 +1,32 @@
+# GitHub Pages
+# None of these can actually be changed
+safe:     true
+lsi:      false
+pygments: true
+
+# Formatting
+markdown: redcarpet
+redcarpet:
+  extensions: [
+    "autolink"
+  , "tables"
+  , "strikethrough"
+  , "with_toc_data"
+  , "fenced_code_blocks"
+  , "no_intra_emphasis"
+  ]
+
+# Permalinks
+permalink: pretty
+
+# Project specific
+# Remember to change these!
+baseurl:      /picnic
+title:        Picnic
+tagline:      Documentation template for Jekyll
+description:  Picnic is a documentation template for Jekyll made by @kasperisager
+url:          http://kasperisager.github.io/picnic
+
+author:
+  name:       Kasper Isager
+  url:        https://github.com/kasperisager

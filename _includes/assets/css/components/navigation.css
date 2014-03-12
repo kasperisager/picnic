@@ -1,0 +1,96 @@
+/**
+ * # Navigation
+ *
+ * No styleguide reference.
+ */
+
+.nav ul,
+.nav li {
+  padding: 0;
+  margin: 0;
+  line-height: 2.2rem;
+  list-style: none;
+}
+
+.nav li a {
+  display: block;
+  padding: 0 1rem;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-decoration: none;
+  text-overflow: ellipsis;
+}
+
+.nav li > a {
+  border-color: #eee;
+  border-style: solid;
+  border-width: 1px 0;
+}
+
+.nav li + li > a {
+  border-top-color: transparent;
+}
+
+.nav ul ul li:first-child > a {
+  border-top-color: transparent;
+}
+
+.nav ul ul li a {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #777;
+  background-color: #f9f9f9;
+}
+
+.nav ul ul li a:hover {
+  color: #4183c4;
+  background-color: #f2f2f2;
+}
+
+.nav ul ul ul li a {
+  padding-left: 2rem;
+  line-height: 1.2rem;
+}
+
+.nav ul ul ul ul li a {
+  padding-left: 3.2rem;
+  line-height: 1.7rem;
+}
+
+.nav > ul > li > a {
+  font-weight: 700;
+  color: #333;
+}
+
+.nav > ul > li > a:hover {
+  color: #4183c4;
+  background-color: #fdfdfd;
+}
+
+.nav > ul > li > a:before {
+  display: inline-block;
+  float: right;
+  vertical-align: top;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #9a9a9a;
+  content: "\25B8";
+}
+
+.nav > ul > .active > a:before {
+  content: "\25BE";
+}
+
+.nav > ul > li:first-child > a:before {
+  display: none;
+}
+
+/* Hide nested lists */
+.nav ul ul {
+  display: none;
+}
+
+/* Show nested lists in active items */
+.nav .active > ul {
+  display: block;
+}
