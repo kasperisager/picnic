@@ -31,6 +31,11 @@
   padding-left: 2rem;
 }
 
+.float-view > ul,
+.float-view > ol {
+  padding-left: 4rem;
+}
+
 .float-view > table {
   /* Allow padding to be added */
   border-collapse: separate;
