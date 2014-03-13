@@ -1,0 +1,7 @@
+---
+---
+{
+  "pages": [
+  {% for page in site.pages | sort: "path" %}{% unless page.url contains "/_" %}{% include search.json entry = page %}{% unless forloop.last %},{% endunless %}{% endunless %}{% endfor %}
+  ]
+}

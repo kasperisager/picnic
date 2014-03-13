@@ -18,7 +18,7 @@
     document.querySelector('#template-search').innerHTML
   );
 
-  var data  = '{{ site.baseurl }}/search.json'
+  var data  = '{{ site.baseurl }}/_search.json'
     , node  = 'pages.*'
     , index = lunr(function () {
       this.field('title', 10);
