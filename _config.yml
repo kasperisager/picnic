@@ -19,6 +19,9 @@ redcarpet:
 # Permalinks
 permalink: pretty
 
+# File inclusion (these would otherwise be hidden)
+include: ["_assets", "_search.json"]
+
 # Project specific
 # Remember to change these!
 baseurl:      /picnic
