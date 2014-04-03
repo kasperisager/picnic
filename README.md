@@ -8,5 +8,10 @@ Perhaps best of all, Picnic features full-text search using [lunr.js](http://lun
 
 [__Watch Picnic in action__](http://kasperisager.github.io/picnic)
 
+## Picnic in the wild
+
+- [__Vanilla Forums__](http://vanillaforums.github.io/VanillaDocs)  
+  API, developer, and end-user documentation for Vanilla Forums. This is where Picnic was born!
+
 ---
 Copyright 2014 © [Kasper Kronborg Isager](http://kasperisager.github.io). Licensed under the terms of the [MIT License](LICENSE.md)
