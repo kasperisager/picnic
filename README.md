@@ -6,11 +6,11 @@ Picnic is heavily inspired by existing projects such as [Slate](https://github.c
 
 Perhaps best of all, Picnic features full-text search using [lunr.js](http://lunrjs.com/). The search data is asynchronously streamed and indexed in chunks using [Oboe.js](http://oboejs.com/), so even if you have hundreds of pages it won't slow down your docs.
 
-[__Watch Picnic in action__](http://kasperisager.github.io/picnic)
+[__Watch Picnic in action__](https://kasperisager.github.io/picnic)
 
 ## Picnic in the wild
 
-- [__Vanilla Forums__](http://vanillaforums.github.io/VanillaDocs)  
+- [__Vanilla Forums__](https://vanillaforums.github.io/VanillaDocs)  
   API, developer, and end-user documentation for Vanilla Forums. This is where Picnic was born!
 
 ---
