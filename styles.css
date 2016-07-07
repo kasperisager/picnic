@@ -1,6 +1,5 @@
 ---
 ---
-{% capture css %}
 {% include css/vendor/normalize-3.0.0.min.css %}
 
 {% include css/shared/scaffolding.css %}
@@ -70,4 +69,3 @@
   border: #ddd solid 1px;
   border-radius: 2px;
 }
-{% endcapture %}{{ css | strip_newlines | replace:'    ','' | replace:'  ',' ' }}
