@@ -1,35 +1,32 @@
 # GitHub Pages
 # None of these can actually be changed
-safe:     true
-lsi:      false
-pygments: true
+safe: true
+lsi: false
+highlighter: rouge
 
 # Formatting
 markdown: redcarpet
 redcarpet:
-  extensions: [
-    "autolink"
-  , "tables"
-  , "strikethrough"
-  , "with_toc_data"
-  , "fenced_code_blocks"
-  , "no_intra_emphasis"
-  ]
+  extensions:
+    [
+    "autolink",
+    "tables",
+    "strikethrough",
+    "with_toc_data",
+    "fenced_code_blocks",
+    "no_intra_emphasis"
+    ]
 
 # Permalinks
 permalink: pretty
 
-# File inclusion (these would otherwise be hidden)
-include: ["_assets", "_search.json"]
-
 # Project specific
 # Remember to change these!
-baseurl:      /picnic
-title:        Picnic
-tagline:      Documentation template for Jekyll
-description:  Picnic is a documentation template for Jekyll made by @kasperisager
-url:          http://kasperisager.github.io/picnic
-
+baseurl: /picnic
+title: Picnic
+tagline: Documentation template for Jekyll
+description: Picnic is a documentation template for Jekyll made by @kasperisager
+url: http://kasperisager.github.io/picnic
 author:
-  name:       Kasper Isager
-  url:        https://github.com/kasperisager
+  name: Kasper Isager
+  url: https://github.com/kasperisager

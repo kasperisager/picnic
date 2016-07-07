@@ -1,6 +1,6 @@
 # Picnic
 
-[![Release](http://img.shields.io/github/release/kasperisager/picnic.svg?style=flat)](https://github.com/kasperisager/picnic/releases)
+> Picnic is a gorgeous documentation template for Jekyll
 
 Picnic is a documentation template for Jekyll that came to life out of the need of having a simple and elegant way to write, view, and search documentation for projects of all sizes.
 
@@ -10,10 +10,6 @@ Perhaps best of all, Picnic features full-text search using [lunr.js](http://lun
 
 [__Watch Picnic in action__](https://kasperisager.github.io/picnic)
 
-## Picnic in the wild
+## License
 
-- [__Vanilla Forums__](https://vanillaforums.github.io/VanillaDocs)  
-  API, developer, and end-user documentation for Vanilla Forums. This is where Picnic was born!
-
----
-Copyright 2014 © [Kasper Kronborg Isager](http://kasperisager.github.io). Licensed under the terms of the [MIT License](LICENSE.md)
+Copyright &copy; 2014-2016 [Kasper Kronborg Isager](https://github.com/kasperisager). Licensed under the terms of the [MIT license](LICENSE.md).
