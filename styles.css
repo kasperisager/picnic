@@ -1,18 +1,18 @@
 ---
 ---
 {% capture css %}
-{% include assets/css/vendor/normalize-3.0.0.min.css %}
+{% include css/vendor/normalize-3.0.0.min.css %}
 
-{% include assets/css/shared/scaffolding.css %}
-{% include assets/css/shared/utilities.css %}
-{% include assets/css/shared/forms.css %}
-{% include assets/css/shared/markdown.css %}
-{% include assets/css/shared/highlight.css %}
+{% include css/shared/scaffolding.css %}
+{% include css/shared/utilities.css %}
+{% include css/shared/forms.css %}
+{% include css/shared/markdown.css %}
+{% include css/shared/highlight.css %}
 
-{% include assets/css/components/dropdown.css %}
-{% include assets/css/components/float-view.css %}
-{% include assets/css/components/navigation.css %}
-{% include assets/css/components/search.css %}
+{% include css/components/dropdown.css %}
+{% include css/components/float-view.css %}
+{% include css/components/navigation.css %}
+{% include css/components/search.css %}
 
 .page-wrapper {
   position: relative;
@@ -26,7 +26,6 @@
   left: 0;
   bottom: 0;
   z-index: 15;
-  overflow-y: scroll;
   width: 17.5rem;
   font-size: 0.9rem;
   border-right: #ddd solid 1px;

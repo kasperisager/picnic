@@ -8,14 +8,14 @@
    * @param {string} data  The URL at which the search data is located
    * @param {string} node  An Oboe.js data node representation
    */
-  Picnic.search = function (index, data, node) {
+  Picnic.Search = function (index, data, node) {
     this.index   = index;
     this.data    = data;
     this.node    = node;
     this.results = [];
   };
 
-  Picnic.search.prototype = {
+  Picnic.Search.prototype = {
     /**
      * Using Oboe.js, stream the list of search data and add them to the
      * index one by one as they're downloaded.
@@ -52,8 +52,9 @@
 
       self.index.search(query).map(function (match) {
         self.results.map(function (result) {
-          // This is not the result you're looking for!
-          if (result.id !== match.ref) return;
+          if (result.id !== match.ref) {
+            return;
+          }
 
           next(result);
         });
