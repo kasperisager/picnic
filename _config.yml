@@ -4,19 +4,6 @@ safe: true
 lsi: false
 highlighter: rouge
 
-# Formatting
-markdown: redcarpet
-redcarpet:
-  extensions:
-    [
-    "autolink",
-    "tables",
-    "strikethrough",
-    "with_toc_data",
-    "fenced_code_blocks",
-    "no_intra_emphasis"
-    ]
-
 # Permalinks
 permalink: pretty
 
